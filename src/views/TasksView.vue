@@ -156,7 +156,6 @@ const taskGroups = [
   border-color: #8fc5fa;
   box-shadow: 0 2px 5px rgba(169, 215, 255, 0.4);
 }
-</style>
 
 /* =============== 替換 TasksView.vue 最底下的 @media 區塊 =============== */
 @media (max-width: 600px) {
@@ -176,3 +175,4 @@ const taskGroups = [
     padding: 5px 10px;
   }
 }
+</style>

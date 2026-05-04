@@ -489,7 +489,6 @@ h3 {
   white-space: pre-line;
   text-align: justify;
 }
-</style>
 /* =============== 替換 InsightsView.vue 最底下的 @media 區塊 =============== */
 @media (max-width: 600px) {
   .container {
@@ -554,3 +553,4 @@ h3 {
     line-height: 1.6;
   }
 }
+</style>

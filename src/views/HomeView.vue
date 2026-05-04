@@ -128,7 +128,6 @@ const goToInsights = () => router.push('/insights')
   margin-bottom: 0;
   font-weight: bold;
 }
-</style>
 
 /* =============== 替換掉 HomeView.vue 最底下的 @media 區塊 =============== */
 @media (max-width: 600px) {
@@ -156,3 +155,4 @@ const goToInsights = () => router.push('/insights')
     font-size: 0.95rem;
   }
 }
+</style>
