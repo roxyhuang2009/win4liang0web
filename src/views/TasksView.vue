@@ -27,15 +27,15 @@ const taskGroups = [
   },
   {
     groupName: '影片組',
-    members: [{ name: '良17陳映言', isLeader: true }, { name: '良25蔡安媞', isLeader: false }, { name: '溫17張藝齡', isLeader: false }, { name: '良26蔡雨庭', isLeader: false }, { name: '良08林宥甄', isLeader: false }]
+    members: [{ name: '良17陳映言', isLeader: true }, { name: '良25蔡安堤', isLeader: false }, { name: '溫17張藝齡', isLeader: false }, { name: '良26蔡雨庭', isLeader: false }, { name: '良08林宥甄', isLeader: false }]
   },
   {
     groupName: '攝影組',
-    members: [{ name: '溫11周幸蓁', isLeader: true }, { name: '良10林爾姸', isLeader: false }, { name: '良01皮羽晴', isLeader: false }, { name: '溫23黃歆芸', isLeader: false }, { name: '良24潘維希', isLeader: false }, { name: '良04李孟璇', isLeader: false }]
+    members: [{ name: '溫11周幸蓁', isLeader: true }, { name: '良10林爾姸', isLeader: false }, { name: '良01皮羽晴', isLeader: false }, { name: '溫23黃歆芸', isLeader: false }, { name: '良24潘維希', isLeader: false }, { name: '良04李孟嫙', isLeader: false }]
   },
   {
     groupName: '網管宣傳組',
-    members: [{ name: '溫01王晴安', isLeader: true }, { name: '溫07李冠慧', isLeader: false }, { name: '溫18郭允兒', isLeader: false }, { name: '良18陳禹妡', isLeader: false }, { name: '良12馬順恩', isLeader: false }, { name: '良21黃睿璯', isLeader: false }, { name: '溫17張藝齡', isLeader: false }, { name: '溫15胡詠喬', isLeader: false }]
+    members: [{ name: '溫01王晴安', isLeader: true }, { name: '溫07李冠慧', isLeader: false }, { name: '溫18郭允兒', isLeader: false }, { name: '良18陳禹妡', isLeader: false }, { name: '良12馬順恩', isLeader: false }, { name: '良21黃睿璿', isLeader: false }, { name: '溫17張藝齡', isLeader: false }, { name: '溫15胡詠喬', isLeader: false }]
   },
   {
     groupName: '總務組',
@@ -43,7 +43,7 @@ const taskGroups = [
   },
   {
     groupName: '美宣組',
-    members: [{ name: '溫25楊景婷', isLeader: true }, { name: '溫03全芯瑩', isLeader: false }, { name: '溫10李喬安', isLeader: false }, { name: '溫27鄭淳允', isLeader: false }, { name: '良09林嘉穎', isLeader: false }, { name: '良29賴芊諭', isLeader: false }, { name: '良13張舒涵', isLeader: false }, { name: '溫04朱書蕾', isLeader: false }, { name: '溫30鍾宇茜', isLeader: false }]
+    members: [{ name: '溫25楊景婷', isLeader: true }, { name: '溫03全芯瑩', isLeader: false }, { name: '溫10李喬安', isLeader: false }, { name: '溫27鄭淳允', isLeader: false }, { name: '良09林嘉潁', isLeader: false }, { name: '良29賴芊諭', isLeader: false }, { name: '良13張舒涵', isLeader: false }, { name: '溫04朱書蕾', isLeader: false }, { name: '溫30鍾宇茜', isLeader: false }]
   },
   {
     groupName: '專研負責人',
