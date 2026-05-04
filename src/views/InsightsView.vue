@@ -378,7 +378,8 @@ const subjects = Object.keys(insightsData)
   font-weight: 900;
   letter-spacing: 5px;
   text-shadow: 3px 3px 0px #a9d7ff;
-  border-bottom: 4px dashed #d6ecff;
+  /* 這裡把虛線顏色加深成深藍色 */
+  border-bottom: 4px dashed #4a6fa5; 
   padding-bottom: 15px;
   display: inline-block;
   width: 100%;
@@ -489,47 +490,50 @@ h3 {
   text-align: justify;
 }
 </style>
-
+/* =============== 替換掉 InsightsView.vue 最底下的 @media 區塊 =============== */
 @media (max-width: 600px) {
   .page-title {
-    font-size: 1.8rem;
-    letter-spacing: 2px;
+    /* 字體縮小並強制不換行 */
+    font-size: 9.5vw; 
+    letter-spacing: 1vw;
+    white-space: nowrap; 
   }
   
   .insight-card {
     padding: 15px 12px; 
   }
 
-  /* 重新調整卡片頂部的空間分配 */
   .card-header {
-    flex-wrap: nowrap; /* 絕對不換行 */
-    gap: 5px; /* 縮小左右兩邊的間距 */
+    flex-wrap: nowrap;
+    gap: 5px; 
   }
 
   .header-left {
-    gap: 8px; /* 縮小 badge 和名字的間距 */
-    flex-shrink: 1; /* 允許名字區域稍微縮小 */
-    min-width: 0; /* 防止名字太長撐破版面 */
+    gap: 8px; 
+    flex-shrink: 1; 
+    min-width: 0; 
   }
   
   .name {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* 名字再縮小一點點 */
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* 如果名字真的太長，變成... */
+    text-overflow: ellipsis; 
   }
   
   .badge {
     font-size: 0.85rem;
-    padding: 4px 8px;
+    padding: 4px 6px;
     white-space: nowrap;
-    flex-shrink: 0; /* 絕對不縮小 badge */
+    flex-shrink: 0; 
   }
   
   .expand-icon {
     font-size: 0.8rem;
     padding: 5px 8px;
-    white-space: nowrap; /* 絕對不讓「▼ 展開」斷成兩行 */
-    flex-shrink: 0; /* 絕對不縮小按鈕 */
+    /* 加入這兩行，強制按鈕絕對不換行，且維持原有寬度 */
+    white-space: nowrap; 
+    min-width: max-content; 
+    flex-shrink: 0; 
   }
 }

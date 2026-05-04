@@ -103,7 +103,8 @@ const taskGroups = [
   font-weight: 900;
   letter-spacing: 5px;
   text-shadow: 3px 3px 0px #a9d7ff;
-  border-bottom: 4px dashed #d6ecff;
+  /* 這裡把虛線顏色加深成深藍色 */
+  border-bottom: 4px dashed #4a6fa5; 
   padding-bottom: 15px;
   display: inline-block;
   width: 100%;
@@ -156,3 +157,17 @@ const taskGroups = [
   box-shadow: 0 2px 5px rgba(169, 215, 255, 0.4);
 }
 </style>
+
+/* =============== 在 TasksView.vue 最底下加入這段 =============== */
+@media (max-width: 600px) {
+  .page-title {
+    /* 字體縮小並強制不換行 */
+    font-size: 10vw; 
+    letter-spacing: 1vw;
+    white-space: nowrap; 
+  }
+
+  .task-card {
+    padding: 20px 15px;
+  }
+}

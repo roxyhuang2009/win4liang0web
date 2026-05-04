@@ -130,11 +130,12 @@ const goToInsights = () => router.push('/insights')
 }
 </style>
 
+/* =============== 替換掉 HomeView.vue 最底下的 @media 區塊 =============== */
 @media (max-width: 600px) {
   .main-title {
-    /* 使用 vw (視窗寬度比例) 讓字體自動適應手機螢幕，並強制不換行 */
-    font-size: 13vw; 
-    letter-spacing: 2vw;
+    /* 把字體再縮小，並確保文字不會斷行 */
+    font-size: 11vw; 
+    letter-spacing: 1.5vw;
     text-shadow: 2px 2px 0px #a9d7ff;
     white-space: nowrap; 
     margin-bottom: 20px;
@@ -151,7 +152,6 @@ const goToInsights = () => router.push('/insights')
     padding: 20px 15px;
   }
 
-  /* 同時修復一下資訊方塊裡的字，避免太擠 */
   .info-box p {
     font-size: 0.95rem;
   }
