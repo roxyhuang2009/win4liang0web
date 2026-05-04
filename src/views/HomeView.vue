@@ -51,15 +51,19 @@ const goToInsights = () => router.push('/insights')
   letter-spacing: 4px;
   margin-bottom: 15px;
   font-weight: bold;
+  /* 加入這行，讓小螢幕時文字也能置中對齊 */
+  text-align: center; 
 }
 
 .main-title {
   font-size: 4.5rem;
   font-weight: 900;
-  letter-spacing: 12px;
+  /* 縮小字距，避免手機上被擠斷 */
+  letter-spacing: 8px; 
   color: #2c3e50;
   margin: 0 0 30px 0;
   text-shadow: 4px 4px 0px #a9d7ff;
+  text-align: center;
 }
 
 .info-box {
@@ -125,3 +129,21 @@ const goToInsights = () => router.push('/insights')
   font-weight: bold;
 }
 </style>
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 3rem; /* 手機上標題變小 */
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 0px #a9d7ff; /* 陰影也按比例縮小 */
+  }
+  
+  .pre-title {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  
+  .nav-card {
+    width: 100%; /* 手機上按鈕佔滿全寬 */
+    padding: 25px 20px;
+  }
+}

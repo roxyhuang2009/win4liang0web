@@ -436,7 +436,18 @@ const subjects = Object.keys(insightsData)
   display: flex;
   align-items: center;
   gap: 15px;
+  /* 加入下面這行，強制內容不換行 */
+  flex-wrap: nowrap; 
 }
+
+.name {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.6rem;
+  /* 強制文字不換行，空間不夠時會縮小間距 */
+  white-space: nowrap; 
+}
+
 .badge {
   background: #d6ecff;
   color: #1a365d;
@@ -444,11 +455,7 @@ const subjects = Object.keys(insightsData)
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.1rem;
-}
-.name {
-  margin: 0;
-  color: #2c3e50;
-  font-size: 1.6rem;
+  white-space: nowrap; /* 班級座號也不換行 */
 }
 .expand-icon {
   color: #4a6fa5;
@@ -482,3 +489,28 @@ h3 {
   text-align: justify;
 }
 </style>
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2rem; /* 手機上大標題變小 */
+    letter-spacing: 2px;
+  }
+  
+  .insight-card {
+    padding: 15px 15px; /* 手機上卡片內距縮小 */
+  }
+  
+  .name {
+    font-size: 1.3rem; /* 手機上名字字體縮小 */
+  }
+  
+  .badge {
+    font-size: 0.9rem; /* 座號牌縮小 */
+    padding: 4px 8px;
+  }
+  
+  .expand-icon {
+    font-size: 0.85rem; /* 展開按鈕縮小 */
+    padding: 6px 10px;
+  }
+}
