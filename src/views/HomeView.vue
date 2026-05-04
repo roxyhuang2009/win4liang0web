@@ -132,18 +132,27 @@ const goToInsights = () => router.push('/insights')
 
 @media (max-width: 600px) {
   .main-title {
-    font-size: 3rem; /* 手機上標題變小 */
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 0px #a9d7ff; /* 陰影也按比例縮小 */
+    /* 使用 vw (視窗寬度比例) 讓字體自動適應手機螢幕，並強制不換行 */
+    font-size: 13vw; 
+    letter-spacing: 2vw;
+    text-shadow: 2px 2px 0px #a9d7ff;
+    white-space: nowrap; 
+    margin-bottom: 20px;
   }
   
   .pre-title {
     font-size: 0.9rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 0 10px;
   }
   
   .nav-card {
-    width: 100%; /* 手機上按鈕佔滿全寬 */
-    padding: 25px 20px;
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  /* 同時修復一下資訊方塊裡的字，避免太擠 */
+  .info-box p {
+    font-size: 0.95rem;
   }
 }

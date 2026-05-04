@@ -492,25 +492,44 @@ h3 {
 
 @media (max-width: 600px) {
   .page-title {
-    font-size: 2rem; /* 手機上大標題變小 */
+    font-size: 1.8rem;
     letter-spacing: 2px;
   }
   
   .insight-card {
-    padding: 15px 15px; /* 手機上卡片內距縮小 */
+    padding: 15px 12px; 
+  }
+
+  /* 重新調整卡片頂部的空間分配 */
+  .card-header {
+    flex-wrap: nowrap; /* 絕對不換行 */
+    gap: 5px; /* 縮小左右兩邊的間距 */
+  }
+
+  .header-left {
+    gap: 8px; /* 縮小 badge 和名字的間距 */
+    flex-shrink: 1; /* 允許名字區域稍微縮小 */
+    min-width: 0; /* 防止名字太長撐破版面 */
   }
   
   .name {
-    font-size: 1.3rem; /* 手機上名字字體縮小 */
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 如果名字真的太長，變成... */
   }
   
   .badge {
-    font-size: 0.9rem; /* 座號牌縮小 */
+    font-size: 0.85rem;
     padding: 4px 8px;
+    white-space: nowrap;
+    flex-shrink: 0; /* 絕對不縮小 badge */
   }
   
   .expand-icon {
-    font-size: 0.85rem; /* 展開按鈕縮小 */
-    padding: 6px 10px;
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    white-space: nowrap; /* 絕對不讓「▼ 展開」斷成兩行 */
+    flex-shrink: 0; /* 絕對不縮小按鈕 */
   }
 }
