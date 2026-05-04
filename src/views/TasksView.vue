@@ -158,16 +158,21 @@ const taskGroups = [
 }
 </style>
 
-/* =============== 在 TasksView.vue 最底下加入這段 =============== */
+/* =============== 替換 TasksView.vue 最底下的 @media 區塊 =============== */
 @media (max-width: 600px) {
   .page-title {
-    /* 字體縮小並強制不換行 */
-    font-size: 10vw; 
-    letter-spacing: 1vw;
+    font-size: 9vw; 
+    letter-spacing: 1px;
     white-space: nowrap; 
   }
 
   .task-card {
-    padding: 20px 15px;
+    padding: 15px 10px;
+  }
+
+  /* 調整名條按鈕，避免手機上太擁擠 */
+  .member-badge {
+    font-size: 0.85rem;
+    padding: 5px 10px;
   }
 }

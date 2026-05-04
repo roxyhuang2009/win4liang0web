@@ -490,50 +490,67 @@ h3 {
   text-align: justify;
 }
 </style>
-/* =============== 替換掉 InsightsView.vue 最底下的 @media 區塊 =============== */
+/* =============== 替換 InsightsView.vue 最底下的 @media 區塊 =============== */
 @media (max-width: 600px) {
+  .container {
+    padding: 20px 10px; /* 縮小容器邊距，把寬度留給卡片 */
+  }
+
   .page-title {
-    /* 字體縮小並強制不換行 */
-    font-size: 9.5vw; 
-    letter-spacing: 1vw;
-    white-space: nowrap; 
+    font-size: 8.5vw; /* 標題再縮小一點，確保不斷行 */
+    letter-spacing: 1px;
+    white-space: nowrap;
   }
   
   .insight-card {
-    padding: 15px 12px; 
+    padding: 15px 10px; /* 縮小卡片內距 */
+    width: 100%; /* 確保卡片撐滿 */
   }
 
   .card-header {
-    flex-wrap: nowrap;
-    gap: 5px; 
+    display: flex;
+    justify-content: space-between; /* 名字跟按鈕分居兩側 */
+    align-items: center;
+    flex-wrap: nowrap !important; /* 絕對禁止換行 */
+    gap: 4px;
   }
 
   .header-left {
-    gap: 8px; 
-    flex-shrink: 1; 
-    min-width: 0; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 1; /* 允許這一塊縮小 */
+    min-width: 0;
   }
   
   .name {
-    font-size: 1.1rem; /* 名字再縮小一點點 */
+    font-size: 1rem; /* 字體縮小，確保在小手機也能橫排 */
+    letter-spacing: -0.5px; /* 稍微縮小字距 */
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
+    font-weight: bold;
   }
   
   .badge {
-    font-size: 0.85rem;
-    padding: 4px 6px;
-    white-space: nowrap;
-    flex-shrink: 0; 
+    font-size: 0.75rem;
+    padding: 3px 6px;
+    flex-shrink: 0; /* 座號牌不縮小 */
   }
   
   .expand-icon {
-    font-size: 0.8rem;
-    padding: 5px 8px;
-    /* 加入這兩行，強制按鈕絕對不換行，且維持原有寬度 */
+    font-size: 0.75rem;
+    padding: 4px 6px;
+    background-color: #f0f7ff;
+    border-radius: 12px;
     white-space: nowrap; 
-    min-width: max-content; 
-    flex-shrink: 0; 
+    flex-shrink: 0; /* 按鈕絕對不縮小 */
+    color: #4a6fa5;
+    font-weight: bold;
+    border: 1px solid #d6ecff;
+  }
+
+  /* 讓心得文字在手機上閱讀更舒服 */
+  .text-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
