@@ -11,7 +11,7 @@ const taskGroups = [
   },
   {
     groupName: '主持組',
-    members: [{ name: '良30謝華汧', isLeader: true }, { name: '良15陳允申', isLeader: false }, { name: '溫24黃鈺淇', isLeader: false }]
+    members: [{ name: '良30謝華汧', isLeader: true }, { name: '良15陳允申', isLeader: false }, { name: '溫24黃鈺淇', isLeader: false }, { name: '溫06李欣芮', isLeader: false }, { name: '良13張舒涵', isLeader: false }, { name: '良29賴芊諭', isLeader: false }]
   },
   {
     groupName: '公關接待組',
