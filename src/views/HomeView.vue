@@ -16,8 +16,8 @@ const goToInsights = () => router.push('/insights')
       <div class="info-box">
         <p><span>IG</span> win4_liang0</p>
         <p><span>日期</span> 2026/05/25</p>
-        <p><span>時間</span> 13:00-17:00</p>
-        <p><span>地點</span> 北一女中 學珠六樓國際會議廳</p>
+        <p><span>時間</span> 13:00-17:10</p>
+        <p><span>地點</span> 北一女中 學珠樓六樓國際會議廳</p>
       </div>
     </header>
 
