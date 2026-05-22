@@ -59,7 +59,7 @@ const subSchedules = [
     <h1 class="page-title">成發時程表</h1>
 
     <div class="section-box">
-      <h2 class="section-title">✦ 大致流程</h2>
+      <h2 class="section-title">✦ 活動流程</h2>
       <div class="schedule-table">
         <div v-for="(item, index) in generalSchedule" :key="index" class="table-row">
           <div class="time-col">{{ item.time }}</div>
@@ -71,7 +71,7 @@ const subSchedules = [
     <div class="dashed-divider"></div>
 
     <div class="section-box">
-      <h2 class="section-title">✦ 分場細流</h2>
+      <h2 class="section-title">✦ 各科分場流程</h2>
       
       <div v-for="(sub, sIndex) in subSchedules" :key="sIndex" class="sub-card">
         <div class="sub-card-header">

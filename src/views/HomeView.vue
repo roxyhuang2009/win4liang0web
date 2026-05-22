@@ -25,7 +25,7 @@ const goToInsights = () => router.push('/insights')
     <div class="button-group">
       <div class="nav-card" @click="goToSchedule">
         <h2>成發時程表</h2>
-        <p>大致流程與分場細流</p>
+        <p>活動流程與各科分場流程</p>
       </div>
 
       <div class="nav-card" @click="goToTasks">
